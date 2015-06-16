@@ -24,6 +24,10 @@ pacman -S antlr4
 
     xkcdtypes
 
+Looks like this:
+
+![Screenshot mimicking original xkcd](http://files.ianonavy.com/YzUw.png)
+
 ## Development
 
 I use ANTLR 4 for generating my lexers and parsers using the following
@@ -31,7 +35,6 @@ commands:
 
     cd grammars
     antlr4 -Dlanguage=Python3 -visitor Types.g4 -o ../xkcd_types/gen/
-
 
 ## Todo
 
