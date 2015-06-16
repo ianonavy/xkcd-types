@@ -14,7 +14,7 @@ Implementation of http://xkcd.com/1537/ in Python using ANTLR
 ```
 git clone git@github.com:ianonavy/xkcd-types.git
 cd xkcd-types
-pip install -r requirements.txt
+pip install -e .
 
 # for development
 pacman -S antlr4
@@ -22,14 +22,15 @@ pacman -S antlr4
 
 ## Running
 
-    python run.py
+    xkcdtypes
 
 ## Development
 
-I used ANTLR 4 for generating my lexers and parsers. I use the following
-command:
+I use ANTLR 4 for generating my lexers and parsers using the following
+commands:
 
-    antlr4 -Dlanguage=Python3 -visitor Types.g4
+    cd grammars
+    antlr4 -Dlanguage=Python3 -visitor Types.g4 -o ../xkcd_types/gen/
 
 
 ## Todo
