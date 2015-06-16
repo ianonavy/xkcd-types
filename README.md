@@ -28,6 +28,10 @@ Looks like this:
 
 ![Screenshot mimicking original xkcd](http://files.ianonavy.com/YzUw.png)
 
+And to prove it's not just printing lines and has real 'logic':
+
+![Screenshot showing it really working](http://files.ianonavy.com/NmFl.png)
+
 ## Development
 
 I use ANTLR 4 for generating my lexers and parsers using the following
