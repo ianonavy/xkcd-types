@@ -34,10 +34,12 @@ command:
 
 ## Todo
 
-Clean up the packaging and maybe make it pip installable for people to play with
-it. I was going to do it in JavaScript initially, but the JS runtime seemed
-incomplete (in particular, the visitor prototype was incomplete), so I opted for
-Python.
-
-Colors (both the 'module' and the title text)
+- Clean up the packaging and maybe make it pip installable for people to play
+  with it. I was going to do it in JavaScript initially, but the JS runtime
+  seemed incomplete (in particular, the visitor prototype was incomplete), so I
+  opted for Python.
+- Colors (both the 'module' from the title text and the interface).
+- Come up with a cooler name.
+- Readline support for history and emacs-like line editing.
+- Documentation? Do we even care? I thought this was supposed to be terrible.
 
