@@ -24,7 +24,7 @@ class TypesREPL(object):
         return text
 
     def get_prompt(self):
-        prompt = "[{}] ".format(self.command_number)
+        prompt = "[{}]> ".format(self.command_number)
         return self.replace_text(prompt)
 
     def enter_command(self, command):
@@ -35,7 +35,7 @@ class TypesREPL(object):
 
     def output(self, text):
         for line in text.split("\n"):
-            print("=> {}".format(line))
+            print("  => {}".format(line))
         print()
 
     def parse_command(self, command, interpreter):
