@@ -16,7 +16,7 @@ num : NUM ;
 string : STRING ;
 
 STRING : '"' .*? '"' | '\'' .*? '\'' ;
-NUM : [0-9]+ ('.' [0-9])? ;
+NUM : [0-9]+ ('.' [0-9]+)? ;
 ADD_OP : [\+\-] ;
 MUL_OP : [\*\/] ;
 RANGE : 'RANGE' ;
