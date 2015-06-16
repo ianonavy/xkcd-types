@@ -42,4 +42,5 @@ command:
 - Come up with a cooler name.
 - Readline support for history and emacs-like line editing.
 - Documentation? Do we even care? I thought this was supposed to be terrible.
+- Fix EOFError on Ctrl+D.
 
