@@ -1,3 +1,4 @@
+import sys
 import readline
 
 from antlr4 import CommonTokenStream
@@ -16,7 +17,15 @@ class TypesREPL(object):
 
     def run(self):
         while True:
-            self.output(self.enter_command(input(self.get_prompt())))
+            try:
+                self.output(self.enter_command(input(self.get_prompt())))
+            except EOFError:
+                sys.exit(0)
+            except KeyboardInterrupt:
+                self.command_number += 1
+                print("\n")
+            except:
+                print(" => Syntax error")
 
     def replace_text(self, text):
         for key, value in self.replacements.items():
