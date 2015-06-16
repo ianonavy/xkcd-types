@@ -15,9 +15,14 @@ Implementation of http://xkcd.com/1537/ in Python using ANTLR
 git clone git@github.com:ianonavy/xkcd-types.git
 cd xkcd-types
 pip install -r requirements.txt
-pacman -S antlr4
 
+# for development
+pacman -S antlr4
 ```
+
+## Running
+
+    python run.py
 
 ## Development
 
